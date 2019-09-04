@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.modafa.sp.dna.uaa",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "5.5.0",
+    "applicationType": "uaa",
+    "baseName": "spdnauaa",
+    "packageName": "com.modafa.sp.dna.uaa",
+    "packageFolder": "com/modafa/sp/dna/uaa",
+    "serverPort": "9999",
+    "authenticationType": "uaa",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "ODY4NzA2ZmUzZmQzZGQyOTI2MDg1MTYzNWM2YmZmYWYwMzg3YTI3YzQwY2FlZjc3YmE0MDdlY2EwM2Y4MmY4MDZjOThlMGFiYWY4YThmYTdhYzUzNTdmMTRlN2RmZmRiMGQ3NjM1NDkyMmY4N2E1YzVlMjMzMjdkMDkzZDIxMDA=",
+    "enableTranslation": true,
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "testFrameworks": [
+      "gatling"
+    ],
+    "jhiPrefix": "jhi",
+    "clientPackageManager": "npm",
+    "nativeLanguage": "fr",
+    "skipClient": true
+  }
+}
