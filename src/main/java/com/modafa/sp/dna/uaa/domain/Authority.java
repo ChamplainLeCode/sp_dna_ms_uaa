@@ -21,9 +21,9 @@ public class Authority implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @NotNull
-    @Size(max = 50)
+    @Size(max = 150)
     @Id
-    @Column(length = 50)
+    @Column(length = 150)
     private String name;
 
     public String getName() {
