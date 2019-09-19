@@ -8,7 +8,7 @@ RUN \
     chmod +x /code/mvnw && \
     sleep 1 && \
     JHI_DISABLE_WEBPACK_LOGS=true ./mvnw -Pprod clean package && \
-    mv /code/target/*.jar /sp-dna-uaa.war && \
+    mv /code/target/*.war /sp-dna-uaa.war && \
     apt-get clean && \
     rm -Rf /code/ /root/.m2 /root/.cache /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
