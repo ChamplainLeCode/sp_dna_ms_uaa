@@ -7,7 +7,7 @@ RUN \
     rm -Rf target node_modules && \
     chmod +x /code/mvnw && \
     sleep 1 && \
-    JHI_DISABLE_WEBPACK_LOGS=true ./mvnw package -ntp -Pprod -DskipTests && \
+    JHI_DISABLE_WEBPACK_LOGS=true ./mvnw -Pprod clean package && \
     mv /code/target/*.jar /sp-dna-uaa.jar && \
     apt-get clean && \
     rm -Rf /code/ /root/.m2 /root/.cache /tmp/* /var/lib/apt/lists/* /var/tmp/*
@@ -15,7 +15,7 @@ RUN \
 FROM openjdk:8-jre-alpine
 ENV SPRING_OUTPUT_ANSI_ENABLED=ALWAYS \
     JAVA_OPTS="-Xmx512m -Xms256m" \
-    SPRING_PROFILES_ACTIVE=prod,swagger    
+    SPRING_PROFILES_ACTIVE=prod,swagger
 EXPOSE 9999
 RUN apk add --no-cache curl && \
     mkdir /target && \
