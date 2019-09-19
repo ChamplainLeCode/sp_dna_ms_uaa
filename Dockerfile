@@ -8,7 +8,7 @@ RUN \
     chmod +x /code/mvnw && \
     sleep 1 && \
     JHI_DISABLE_WEBPACK_LOGS=true ./mvnw -Pprod clean package && \
-    mv /code/target/*.jar /sp-dna-uaa.jar && \
+    mv /code/target/*.jar /sp-dna-uaa.war && \
     apt-get clean && \
     rm -Rf /code/ /root/.m2 /root/.cache /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
@@ -22,6 +22,6 @@ RUN apk add --no-cache curl && \
     chmod g+rwx /target
 CMD java \
         ${JAVA_OPTS} -Djava.security.egd=file:/dev/./urandom \
-        -jar /sp-dna-uaa.jar
+        -jar /sp-dna-uaa.war
 
-COPY --from=builder /sp-dna-uaa.jar .
+COPY --from=builder /sp-dna-uaa.war .
