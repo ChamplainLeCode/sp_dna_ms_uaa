@@ -14,7 +14,7 @@ RUN \
 
 FROM openjdk:8-jre-alpine
 ENV SPRING_OUTPUT_ANSI_ENABLED=ALWAYS \
-    JAVA_OPTS="-Xmx512m -Xms256m" \
+    JAVA_OPTS="" \
     SPRING_PROFILES_ACTIVE=prod,swagger
 EXPOSE 9999
 RUN apk add --no-cache curl && \
