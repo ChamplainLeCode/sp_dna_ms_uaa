@@ -15,7 +15,8 @@ RUN \
 FROM openjdk:8-jre-alpine
 ENV SPRING_OUTPUT_ANSI_ENABLED=ALWAYS \
     JAVA_OPTS="" \
-    SPRING_PROFILES_ACTIVE=prod,swagger
+    SPRING_PROFILES_ACTIVE=prod,swagger \
+    SPRING_DATA_JEST_URI=http://172.17.0.14:9200
 EXPOSE 9999
 RUN apk add --no-cache curl && \
     mkdir /target && \

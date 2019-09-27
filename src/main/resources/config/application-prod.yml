@@ -64,10 +64,12 @@ spring:
     liquibase:
         contexts: prod
     mail:
-        host: localhost
-        port: 25
-        username:
-        password:
+        host: smtp.ionos.com
+        port: 587
+        username: noreply@demo-sp-dna-app.modernappfactory.com
+        password: 8FB5z3wmi
+        from:  noreply@demo-sp-dna-app.modernappfactory.com
+        base-url: https://demo-sp-dna-app.modernappfactory.com
     thymeleaf:
         cache: true
     sleuth:
@@ -136,8 +138,8 @@ jhipster:
                 # Refresh Token is valid for 7 days
                 token-validity-in-seconds-for-remember-me: 252000
     mail: # specific JHipster mail property, for standard properties see MailProperties
-        from: spdnauaa@localhost
-        base-url: http://my-server-url-to-change # Modify according to your server's URL
+        from:  noreply@demo-sp-dna-app.modernappfactory.com
+        base-url: https://demo-sp-dna-app.modernappfactory.com
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx:
             enabled: true
