@@ -72,7 +72,8 @@ spring:
         username: noreply@demo-sp-dna-app.modernappfactory.com
         password: 8FB5z3wmi
         from:  noreply@demo-sp-dna-app.modernappfactory.com
-        base-url: https://demo-sp-dna-app.modernappfactory.com
+#        base-url: https://demo-sp-dna-app.modernappfactory.com
+        base-url: http://74.208.183.205:8080
     thymeleaf:
         cache: true
     sleuth:
@@ -142,7 +143,8 @@ jhipster:
                 token-validity-in-seconds-for-remember-me: 252000
     mail: # specific JHipster mail property, for standard properties see MailProperties
         from:  noreply@demo-sp-dna-app.modernappfactory.com
-        base-url: https://demo-sp-dna-app.modernappfactory.com
+#        base-url: https://demo-sp-dna-app.modernappfactory.com
+        base-url: http://74.208.183.205:8080
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx:
             enabled: true
