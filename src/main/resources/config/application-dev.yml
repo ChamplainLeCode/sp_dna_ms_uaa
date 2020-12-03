@@ -42,9 +42,9 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://localhost:3306/spdnauaa?useUnicode=true&characterEncoding=utf8&useSSL=false
-        username: spdnadbuser
-        password: spdnadbuser123
+        url: jdbc:mysql://localhost:3306/spdnauaa?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Africa/Douala&createDatabaseIfNotExist=true
+        username: dev
+        password: cameroun237
         hikari:
             auto-commit: false
             data-source-properties:
