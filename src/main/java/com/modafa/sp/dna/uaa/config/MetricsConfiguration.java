@@ -1,7 +1,5 @@
 package com.modafa.sp.dna.uaa.config;
 
-import io.github.jhipster.config.JHipsterProperties;
-
 import com.codahale.metrics.JmxReporter;
 import com.codahale.metrics.JvmAttributeGaugeSet;
 import com.codahale.metrics.MetricRegistry;
@@ -11,6 +9,7 @@ import com.codahale.metrics.jvm.*;
 import com.ryantenney.metrics.spring.config.annotation.EnableMetrics;
 import com.ryantenney.metrics.spring.config.annotation.MetricsConfigurerAdapter;
 import com.zaxxer.hikari.HikariDataSource;
+import io.github.jhipster.config.JHipsterProperties;
 import io.prometheus.client.CollectorRegistry;
 import io.prometheus.client.dropwizard.DropwizardExports;
 import io.prometheus.client.exporter.MetricsServlet;
