@@ -28,9 +28,9 @@ public class UaaProperties {
         //name of the keystore in the classpath
         private String name = "config/tls/keystore.p12";
         //password used to access the key
-        private String password = "password";
+        private String password = "AJcwb49rqNWQghmm";
         //name of the alias to fetch
-        private String alias = "selfsigned";
+        private String alias = "dna";
 
         public String getName() {
             return name;
