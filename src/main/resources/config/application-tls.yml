@@ -10,9 +10,9 @@
 server:
     ssl:
         key-store: classpath:config/tls/keystore.p12
-        key-store-password: password
+        key-store-password: AJcwb49rqNWQghmm
         key-store-type: PKCS12
-        key-alias: selfsigned
+        key-alias: dna
 jhipster:
     http:
         version: V_2_0
