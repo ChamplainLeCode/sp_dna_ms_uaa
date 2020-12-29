@@ -72,7 +72,7 @@ spring:
         username: noreply@demo-sp-dna-app.modernappfactory.com
         password: 8FB5z3wmi
         from:  noreply@demo-sp-dna-app.modernappfactory.com
-        base-url: https://demo-sp-dna-app.modernappfactory.com
+        base-url: https://test-dna-gateway.sprint-pay.com
     thymeleaf:
         cache: true
     sleuth:

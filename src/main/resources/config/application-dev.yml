@@ -43,8 +43,8 @@ spring:
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
         url: jdbc:mysql://localhost:3306/spdnauaa?useUnicode=true&characterEncoding=utf8&useSSL=false
-        username: spdnadbuser
-        password: spdnadbuser123
+        username: dev
+        password: cameroun237
         hikari:
             auto-commit: false
             data-source-properties:
