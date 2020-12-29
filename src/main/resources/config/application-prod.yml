@@ -73,7 +73,8 @@ spring:
         password: 8FB5z3wmi
         from:  noreply@demo-sp-dna-app.modernappfactory.com
 #        base-url: https://demo-sp-dna-app.modernappfactory.com
-        base-url: http://74.208.183.205:8080
+#        base-url: http://74.208.183.205:8080
+        base-url: https://test-dna-gateway.sprint-pay.com
     thymeleaf:
         cache: true
     sleuth:
@@ -144,7 +145,8 @@ jhipster:
     mail: # specific JHipster mail property, for standard properties see MailProperties
         from:  noreply@demo-sp-dna-app.modernappfactory.com
 #        base-url: https://demo-sp-dna-app.modernappfactory.com
-        base-url: http://74.208.183.205:8080
+#        base-url: http://74.208.183.205:8080
+        base-url: https://test-dna-gateway.sprint-pay.com
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx:
             enabled: true
